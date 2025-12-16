@@ -136,7 +136,7 @@ Records questions the chatbot couldn't answer.
 
 To customize this for your own use:
 
-1. Update the `self.name` in the `Me` class (line 107)
+1. Update the `self.name` variable in the `Me` class constructor
 2. Replace `me/linkedin.pdf` with your LinkedIn profile PDF
 3. Update `me/summary.txt` with your personal summary
 4. Modify the system prompt in `system_prompt()` method to change the bot's behavior
