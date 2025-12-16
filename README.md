@@ -49,10 +49,10 @@ The system accepts JSON requests for tool calling and returns JSON responses:
 
 ```json
 {
-  "tool": "example_tool",
+  "tool": "get_weather",
   "parameters": {
-    "param1": "value1",
-    "param2": "value2"
+    "location": "San Francisco",
+    "units": "celsius"
   }
 }
 ```
@@ -62,7 +62,9 @@ Response format:
 {
   "status": "success",
   "result": {
-    "output": "tool execution result"
+    "temperature": 18,
+    "conditions": "partly cloudy",
+    "location": "San Francisco"
   }
 }
 ```
